@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HustleHubKit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Nunito', sans-serif;
+      background: #fff;
+      color: #111;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .cover-img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .description {
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: #444;
+    }
+    .email-input {
+      margin-bottom: 20px;
+    }
+    .email-input label {
+      font-size: 15px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .email-input input {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    .complete-btn {
+      background: black;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 12px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .popup {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #111;
+      color: #fff;
+      padding: 14px;
+      font-size: 15px;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
+    .popup.show {
+      opacity: 1;
+      animation: slideUp 0.4s ease;
+    }
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: left; font-size: 1.5rem; margin: 0 auto 2px auto; max-width: 600px;">DIGITAL INCOME BLUEPRINT – EBOOK</h2>
+
+
+<nav style="display: flex; flex-direction: row; gap: 20px; padding: 4px 0; font-size: 15px; justify-content: flex-start; align-items: center; max-width: 600px; margin: 0 auto 4px auto;">
+  <a href="#about" style="text-decoration: none; color: #111; display: flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #ccc; border-radius: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 017.76 16h8.48a4 4 0 010 8H8a4 4 0 01-2.879-6.804z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+    About Us
+  </a>
+  <a href="#contact" style="text-decoration: none; color: #111; display: flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #ccc; border-radius: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+    </svg>
+    Contact
+  </a>
+</nav>
+  <div class="container">
+
+    
+
+    <!-- Description -->
+    <div class="description">
+  <ul style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="margin-right: 8px; color: green;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+      Zero-investment business ideas anyone can start
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="margin-right: 8px; color: green;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+      Perfect for students aged 15–25
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="margin-right: 8px; color: green;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+      Step-by-step guidance to launch your hustle
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="margin-right: 8px; color: green;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+      Real online earning methods using free tools
+    </li>
+    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="margin-right: 8px; color: green;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+      Instant download access after payment
+    </li>
+  </ul>
+</div>
+
+    <!-- Locked PDF Preview -->
+    <div class="file-item" style="border: 1px solid #ccc; padding: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; border-radius: 10px; font-size: 15px;">
+      <div class="file-type" style="display: flex; align-items: center;">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" />
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2v6h6" />
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13h8m-8 4h5" />
+</svg>
+        <div class="file-details" style="margin-left: 10px;">
+          <div class="file-name" style="font-weight: 600;">Digital_Income_Blueprint.pdf</div>
+          <div class="file-size" style="font-size: 13px; color: #666;">PDF · 446 KB</div>
+        </div>
+      </div>
+      <svg class="lock-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" style="color: #999;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.828 0 1.5.672 1.5 1.5S12.828 14 12 14s-1.5-.672-1.5-1.5S11.172 11 12 11z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11V7a5 5 0 00-10 0v4H5v9h14v-9h-2z"/>
+      </svg>
+    </div>
+
+    <!-- Email Input -->
+    <div class="email-input">
+      <label for="userEmail">Enter your Email to receive the eBook:</label>
+      <input type="email" id="userEmail" placeholder="example@email.com" required />
+    </div>
+
+    <button class="complete-btn" onclick="makePayment()">Pay Now</button>
+  </div>
+
+  <div class="popup" id="popup" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20" style="color: yellow;">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" />
+  </svg>
+  Please enter a valid email before proceeding to payment.
+</div>
+
+  <script>
+    function makePayment() {
+      const emailInput = document.getElementById("userEmail");
+      const popup = document.getElementById("popup");
+      const email = emailInput.value.trim();
+
+      if (!email || !validateEmail(email)) {
+        popup.classList.add("show");
+        setTimeout(() => popup.classList.remove("show"), 3000);
+        return;
+      }
+
+      localStorage.setItem("user_email", email); // Store email for after payment
+
+      const options = {
+        key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
+        amount: 9900,
+        currency: "INR",
+        name: "HustleHubKit",
+        description: "Digital Income Blueprint eBook",
+        handler: function (response) {
+          const storedEmail = localStorage.getItem("user_email");
+
+          fetch("https://your-replit-project-name.replit.app/send-pdf", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              email: storedEmail,
+              payment_id: response.razorpay_payment_id
+            })
+          })
+          .then(res => res.json())
+          .then(data => {
+            alert(data.message || "The eBook has been sent to your email.");
+          })
+          .catch(err => {
+            console.error("PDF delivery failed:", err);
+            alert("Payment was successful but email delivery failed.");
+          });
+        },
+        prefill: {
+          email: email
+        },
+        theme: {
+          color: "#000000"
+        }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  </script>
+</body>
+</html>
