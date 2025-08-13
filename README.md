@@ -1,4 +1,4 @@
-<h1 align="center">🚀 HustleHub Kit – Digital Product Landing Page</h1>
+<h1 align="center">🚀 HustleHub – Digital Product Landing Page</h1>
 
 <p align="center">
   A clean, fast, and responsive website to sell digital products with automated delivery.
@@ -8,7 +8,7 @@
 
 <h2>📝 Project Overview</h2>
 <p>
-  HustleHub Kit is a simple, no-database HTML landing page created to sell a digital PDF product with payment integration and automated file delivery. It's built for creators and entrepreneurs who want to start selling fast without the complexity of a full backend system.
+  HustleHub is a simple, no-database HTML landing page created to sell a digital PDF product with payment integration and automated file delivery. It's built for creators and entrepreneurs who want to start selling fast without the complexity of a full backend system.
 </p>
 
 <h2>🧰 Tech Stack</h2>
@@ -31,7 +31,7 @@
 
 <h2>📦 Folder Structure</h2>
 <pre>
-📁 hustlehub-kit/
+📁 hustlehub/
 ├── 📄 index.html
 ├── 📄 success.html
 └── 📄 about.html
