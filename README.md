@@ -34,9 +34,7 @@
 📁 hustlehub-kit/
 ├── 📄 index.html
 ├── 📄 success.html
-├── 📄 style.css
-├── 📄 script.js
-└── 📄 hustlehub-kit.pdf
+└── 📄 about.html
 </pre>
 
 <h2>🔗 Live Preview</h2>
@@ -45,7 +43,7 @@
 </p>
 
 <h2>📸 Screenshot</h2>
-<img src="screenshot.png" alt="HustleHub Kit Screenshot" width="100%"/>
+<img src="TO BE FILLED" alt="HustleHub Kit Screenshot" width="100%"/>
 
 <h2>📬 Contact</h2>
 <p>
