@@ -42,11 +42,11 @@
 
 <h2>🔗 Live Preview</h2>
 <p>
-  <a href="https://your-live-site-link.com" target="_blank">🌐 View Website</a>
+  <a href="https://hustlehubblueprint.vercel.app/" target="_blank">🌐 Live Website</a>
 </p>
 
-<h2>📸 Screenshot</h2>
-<img src="TO BE FILLED" alt="HustleHub Kit Screenshot" width="100%"/>
+<h2>📸 Screenshot (Automation)</h2>
+<img src="https://i.postimg.cc/QtWjpy71/Screenshot-2025-08-15-185501.png" alt="HustleHub Kit Screenshot" width="100%"/>
 
 <h2>📬 Contact</h2>
 <p>
